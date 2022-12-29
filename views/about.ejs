@@ -1,0 +1,29 @@
+<%- include("partials/header") -%>
+<h1>About Us</h1>
+<h3>What is Daily Journal?</h3>
+<p>
+  <%=dailyJournal %>
+</p>
+<h3>Why is Daily Journaling Important?</h3>
+<p>
+  <% for(let i=0;i<importanceDailyJournal.length;i++){ %>
+    <%=importanceDailyJournal[i] %>
+    <br />
+  <%}%>
+</p>
+<h3>What to write in Daily Journal</h3>
+<p>
+  <%for(let i=0;i<whatToWrite.length;i++){%>
+    <%=whatToWrite[i]%>
+    <br>
+  <%}%>
+</p>
+<h3>How to Write a Daily Journal ?</h3>
+<p>
+  GO to compose section by click in Navigation Bar.
+   Then Write a title for your Daily Journal and Write what you want and
+   then click on publish button
+</p>
+<h3>Who Create and Run this WebSite?</h3>
+<%=whoCreate%>
+<%- include("partials/footer") -%>
