@@ -37,7 +37,7 @@ const Post = mongoose.model("Post", postSchema);
 
 app.get("/",function(req,res){
   Post.find({}, function(err, posts){
-   res.render("home", {homeStartingContent: homeStartingContent, posts: posts });
+   res.render("index", {homeStartingContent: homeStartingContent, posts: posts });
  })
 })
 app.get("/about",function(req,res){
